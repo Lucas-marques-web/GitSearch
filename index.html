@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitSearch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+<body>
+    
+    <!-- Search section -->
+    <div class="searchContent container-sm">
+      <h1 class="h1-search textCenter">Find the Github Account</h1>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img class="githubLogo" alt="github-logo" src="imgs/github-logo.png">
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+              <!-- Input field for GitHub username -->
+              <input type="text" class="form-control" id="profileName" value="" placeholder="Github User">
+              <!-- Button to initiate the search -->
+              <button type="submit" class="btn btn-primary searchBtn" onclick="getnewUser(event)">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content section -->
+    <div class="mainContent hidden">
+        <!-- Title with the user's name -->
+        <h2 class="name textCenter">Name</h2>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <!-- User's avatar image -->
+              <img src="" alt="avatar img" class="avatarImg">
+            </div>
+            <div class="col">
+              <!-- User's bio -->
+              <p class="bio">bio text</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="container-fluid">
+                <!-- Table with user information -->
+                <table class="table">
+                  <tr>
+                    <th>Username</th>
+                    <td class="login"></td>
+                  </tr>
+                  <tr>
+                    <th>Followers</th>
+                    <td class="followers"></td>
+                  </tr>
+                  <tr>
+                    <th>Location</th>
+                    <td class="location"></td>
+                  </tr>
+                  <tr>
+                    <th>Account-birth</th>
+                    <td class="created-at"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <!-- Button with link to the user's profile -->
+              <button class="btn btn-lg btn-primary profileLinkBtn"><a href="" class="profileLink">Link to Profile</a></button>
+            </div>
+          </div>
+        </div>
+        <!-- Back button image -->
+        <img src="imgs/backButton.png" alt="anterior-Page" class="backButton" onclick="goBack()" onmouseover="goBackOver()" onmouseout="goBackOut()">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

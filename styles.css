@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    background-image: url(imgs/backgroundImg.jpg);
+    color: whitesmoke;
+}
+img {
+    border-radius: 100%;
+    height:250px;
+}
+.hidden{
+    display: none;
+}
+.form-control{
+    max-width: 400px;
+    display: inline-block;
+}
+.textCenter{
+    text-align: center;
+}
+.searchContent{
+    width: 100vw;
+    height: 90vh;
+    padding-top: 5vh;
+}
+.githubLogo{
+    position: relative;
+    height: 15rem; 
+    margin-bottom: 5rem;  
+}
+.h1-search{
+    padding-top: 5%;
+    font-weight: bold;
+}
+.mainContent{
+    width:80%;
+    height: 90%;
+    border-radius: 10px;
+    position: relative;
+    left: 10%;
+    top: 5%;
+    background-color: rgb(22, 20, 20);
+}
+.name{
+    padding-top: 5%;
+}
+.table{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.backButton{
+    height: 32px;
+    position: absolute;
+    top: 85vh;
+    left: 10px;
+}
+.backButton :hover{
+    height:48px;
+}
